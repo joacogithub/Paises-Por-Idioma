@@ -7,7 +7,7 @@ document.querySelector('#txtSearch').addEventListener('keydown', function (event
 })
 
 function searchByLanguage() {
-  let searchQuery = document.querySelector('#txtSearch').value
+  let searchQuery = document.querySelector('#txtSearch').value.trim()
   const container = document.querySelector('#divContainer')
 
   container.innerHTML = ''
